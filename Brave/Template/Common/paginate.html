@@ -1,0 +1,31 @@
+0023:.:0:3:14=48041e4b:16=47d21313:0033:Exception:000000000:2:14=48041e4b:16=47d21313:002C:500.html:012:1:14=5111D44A:16=47d21313:エラー（500）002F:debug.html:0338:1:14=5111D44A:16=47d21313:<style>
+#exception_handle {width: 100%; margin: 0; padding: 0; border: 1px solid #800000; border-top: none;}
+#exception_handle h3 {font-size: 14px; margin: 0px; background-color: #800000; color: #FFF;}
+#exception_handle table {font-size: 12px; text-align: left; margin: 2px;}
+</style>
+
+<div id="exception_handle">
+<h3>&nbsp;Brave Error Handler</h3>
+<table>
+    <tr>
+        <th>TYPE:</th>
+        <td><{$errtypes[$error.errno]}></td>
+    </tr>
+    <{if $error.errfile neq ''}>
+    <tr>
+        <th>FILE:</th>
+        <td><{$error.errfile}></td>
+    </tr>
+    <{/if}>
+    <{if $error.errline neq ''}>
+    <tr>
+        <th>LINE:</th>
+        <td><{$error.errline}></td>
+    </tr>
+    <{/if}>
+    <tr>
+        <th valign="top">MSG:</th>
+        <td><{$error.errstr}></td>
+    </tr>
+</table>
+</div>

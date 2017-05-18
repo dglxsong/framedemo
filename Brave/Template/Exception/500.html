@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title><{$page.title|escape}></title>
+    <link rel="stylesheet" href="/css/weui.min.css">
+    <link rel="stylesheet" href="/css/jquery-weui.css">
+    <link rel="stylesheet" href="/css/iconfont.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body ontouchstart class="station-<{$smarty.const.WX_APP_IMG_PATH}>">
+    <div class="weui_msg">
+      <div class="weui_icon_area"><i class="weui_icon_warn weui_icon_msg"></i></div>
+      <div class="weui_text_area">
+        <h2 class="weui_msg_title">系统忙，请稍后再试</h2>
+      </div>
+      <div class="weui_opr_area">
+        <p class="weui_btn_area">
+          <a href="/index" class="weui_btn weui_btn_primary">回到首页</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
